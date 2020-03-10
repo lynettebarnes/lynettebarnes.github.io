@@ -1,1 +1,5 @@
 /*Site Styling*/
+body {
+    background-image: url(../images/mainBackground.jpg);
+    background-repeat: no-repeat;
+}

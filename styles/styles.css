@@ -1,5 +1,44 @@
 /*Site Styling*/
+
 body {
+    background-image: none;
+}
+
+body.index {
     background-image: url(../images/mainBackground.jpg);
     background-repeat: no-repeat;
 }
+
+.navbar {
+    width: 100%;
+    opacity: 0.8;
+}
+
+/*Home Screen Start*/
+.home-screen-text {
+    margin-top: 60%;    
+}
+
+.home-screen-text > p {
+    line-height: 1;
+}
+
+div.home-screen-text h4 {
+    color: white;
+    text-align: center;
+}
+
+.home-logo {
+    width: 100%;
+}
+/*Home Screen End*/
+
+/*Nav on screens except index -- Start*/
+.nav-img {
+    width: 20%;
+}
+
+.nav-link.padding {
+    padding-top: 0.3rem;
+}
+/*Nav on screens except index -- End*/

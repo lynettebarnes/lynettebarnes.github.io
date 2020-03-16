@@ -11,7 +11,6 @@ function setBackgroundImage() {
 }
 
 function getImageNumber(fileNo) {
-    console.log(fileNo);
     switch (fileNo) {
         case ('0.jpg")'):
             return '1.jpg")';

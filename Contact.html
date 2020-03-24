@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="./styles/bootstrap.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark pt-1 pb-0">
+    <a class="navbar-brand p-0" href="Index.html">
+      <img src="./images/logo_no_Background.png" alt="Jenkins Autopaint Logo" class="nav-img">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active ml-3">
+          <a class="nav-link padding" href="Index.html">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active ml-3">
+          <a class="nav-link padding" href="Gallery.html">Gallery<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active ml-3">
+          <a class="nav-link padding" href="About.html">About<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active ml-3">
+          <a class="nav-link padding" href="Contact.html">Contact<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+<div class="container-fluid">
+      
+  <!-- ------------Chris: Contact Form--------------- -->
+<form id="contact-form" method="post" action="contact.php" role="form">
+  <div class="messages"></div>
+  <div class="controls">
+      <div class="row">
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label for="form_name">Firstname *</label>
+                  <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                  <div class="help-block with-errors"></div>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label for="form_lastname">Lastname *</label>
+                  <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                  <div class="help-block with-errors"></div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label for="form_email">Email *</label>
+                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                  <div class="help-block with-errors"></div>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label for="form_need">Please specify your need *</label>
+                  <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                      <option value=""></option>
+                      <option value="Request quotation">Professional Repaint</option>
+                      <option value="Request order status">Vehichle Repair</option>
+                      <option value="Request copy of an invoice">Custom Paint Job</option>
+                      <option value="Other">General Inquiry</option>
+                  </select>
+                  <div class="help-block with-errors"></div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12">
+              <div class="form-group">
+                  <label for="form_message">Message *</label>
+                  <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                  <div class="help-block with-errors"></div>
+              </div>
+          </div>
+          <div class="col-md-12">
+              <input type="submit" class="btn btn-success btn-send" value="Send message">
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12">
+              <p class="text-muted">
+                  <strong>*</strong> These fields are required. Contact form template by
+                  <a href="https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form" target="_blank">Bootstrapious</a>.</p>
+          </div>
+      </div>
+  </div>
+</form>
+</div>
+
+</body>
+<script type="text/javascript" src="./scripts/jquery-3.4.1.js"></script>
+<script type="text/javascript" src="./scripts/bootstrap.js"></script>
+<script type="text/javascript" src="./scripts/popper.js"></script>
+<script type="text/javascript" src="./scripts/site.js"></script>
+
+</html>

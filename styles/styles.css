@@ -44,6 +44,12 @@ body.index {
     .home-screen-facebook {
         margin-top: 10% !important;
     }
+
+    form {
+        width: 100%;
+        padding-top: 1rem;
+        margin: auto;
+    }
 }
 
 @media only screen and (min-width: 501px) {
@@ -52,6 +58,12 @@ body.index {
     }
     .facebook-div {
         width: 50%;
+    }
+
+    form {
+        width: 70%;
+        padding-top: 1rem;
+        margin: auto;
     }
 }
 .navbar {

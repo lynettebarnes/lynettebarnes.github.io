@@ -45,14 +45,16 @@
           <div class="col-md-6">
               <div class="form-group">
                   <label for="form_name">Firstname *</label>
-                  <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                  <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" 
+                  required="required" oninput="setCustomValidity('')" oninvalid="this.setCustomValidity($(this).attr('data-error'))" data-error="Firstname is required.">
                   <div class="help-block with-errors"></div>
               </div>
           </div>
           <div class="col-md-6">
               <div class="form-group">
                   <label for="form_lastname">Lastname *</label>
-                  <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                  <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" 
+                  required="required" oninput="setCustomValidity('')" oninvalid="this.setCustomValidity($(this).attr('data-error'))" data-error="Lastname is required.">
                   <div class="help-block with-errors"></div>
               </div>
           </div>
@@ -61,14 +63,16 @@
           <div class="col-md-6">
               <div class="form-group">
                   <label for="form_email">Email *</label>
-                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" 
+                  required="required" oninput="setCustomValidity('')" oninvalid="this.setCustomValidity($(this).attr('data-error'))" data-error="Valid email is required.">
                   <div class="help-block with-errors"></div>
               </div>
           </div>
           <div class="col-md-6">
               <div class="form-group">
                   <label for="form_need">Please specify your need *</label>
-                  <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                  <select id="form_need" name="need" class="form-control" required="required" oninput="setCustomValidity('')" 
+                  oninvalid="this.setCustomValidity($(this).attr('data-error'))" data-error="Please specify your need.">
                       <option value=""></option>
                       <option value="Professional Repaint">Professional Repaint</option>
                       <option value="Vehicle Repair">Vehicle Repair</option>
@@ -83,11 +87,18 @@
           <div class="col-md-12">
               <div class="form-group">
                   <label for="form_message">Message *</label>
-                  <textarea id="form_message" name="message" class="form-control" placeholder="Message for Jenkins Autopaint" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                  <textarea id="form_message" name="message" class="form-control" placeholder="Message for Jenkins Autopaint" rows="4" oninput="setCustomValidity('')"
+                   oninvalid="this.setCustomValidity($(this).attr('data-error'))" required="required" data-error="Please, leave us a message."></textarea>
                   <div class="help-block with-errors"></div>
               </div>
           </div>
           <div class="col-md-12">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" required="required" oninvalid="this.setCustomValidity($(this).attr('data-error'))" 
+              oninput="setCustomValidity('')" data-error="You must check this box before you can submit a message." id="checkbxDeclaration">
+              <label class="form-check-label" for="checkbxDeclaration">* Please check this box to confirm that you agree for your data to be process by a third party company</label>
+              <div class="help-block with-errors"></div>
+            </div>
               <input type="submit"id="btnSubmit" class="btn btn-success btn-send" value="Send message">
           </div>
       </div>

@@ -6,8 +6,7 @@ body {
 
 body.index {
     background-image: url(../images/mainBackground_0.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: no-repeat;    
     -webkit-transition: background 1000ms ease-in 1000ms;
      -moz-transition: background 1000ms ease-in 1000ms;
      -o-transition: background 1000ms ease-in 1000ms;
@@ -19,14 +18,65 @@ body.index {
      height:100vh;
 }
 
+@media only screen and (max-width: 500px) {
+    .container-fluid.index {
+        /* display: table; */
+        justify-content: space-between;
+    }
+    .logo-div {
+        /* display: table-footer-group;
+        float: left; */
+        width: 100%;
+        order: 1;
+    }
+    .facebook-div {
+        /* display: table-header-group;
+        float: right; */
+        width: 100%;
+        order: 2;
+    }
+
+    .home-screen-text {
+        margin-top: 10% !important;
+        margin-left: 15% !important; 
+    }
+
+    .home-screen-facebook {
+        margin-top: 10% !important;
+    }
+
+    form {
+        width: 100%;
+        padding-top: 1rem;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 501px) {
+    .logo-div {
+        width: 50%;
+    }
+    .facebook-div {
+        width: 50%;
+    }
+
+    form {
+        width: 70%;
+        padding-top: 1rem;
+        margin: auto;
+    }
+}
 .navbar {
     width: 100%;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 /*Home Screen Start*/
 .home-screen-text {
-    margin-top: 60%;    
+    margin-top: 50%;  
+    margin-right: 1rem;
+    margin-left: auto;
+    width: 60%;  
 }
 
 .home-screen-text > p {
@@ -40,7 +90,7 @@ div.home-screen-text h4 {
 
 .home-screen-facebook {
     margin-top: 25%;  
-    background-color: transparent/*#3B5998*/;
+    background-color: transparent;
     padding: 0.5rem;  
     border-radius: 0.2rem;
     width: 20rem;

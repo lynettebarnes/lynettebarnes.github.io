@@ -121,7 +121,7 @@ iframe {
 }
 /*Nav on screens except index -- End*/
 
-/* --------------Chris: CSS for Light Box Gallery--------------------
+/* --------------Chris: CSS for Light Box Gallery-------------------- */
 .gallery{
     margin: 10px 50px;
 }
@@ -134,7 +134,7 @@ iframe {
 }
 .gallery img:hover{
     filter: grayscale(0);
-}*/
+}
 
 #fs-frm input,
   #fs-frm select,

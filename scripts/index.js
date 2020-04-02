@@ -1,3 +1,4 @@
+// Index Javascript
 $(document).ready(function () {
     setInterval(setBackgroundImage, 8000);
 });

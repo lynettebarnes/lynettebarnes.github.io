@@ -135,7 +135,7 @@ iframe {
 .gallery img:hover{
     filter: grayscale(0);
 }
-
+/*
 #fs-frm input,
   #fs-frm select,
   #fs-frm textarea,
@@ -166,6 +166,7 @@ iframe {
   }
   
   /* border, padding, margin, width */
+  /*
   #fs-frm input,
   #fs-frm select,
   #fs-frm textarea,
@@ -226,7 +227,7 @@ iframe {
   }
   
   /* address, locale */
-  #fs-frm fieldset.locale input[name="city"],
+  /*#fs-frm fieldset.locale input[name="city"],
   #fs-frm fieldset.locale select[name="state"],
   #fs-frm fieldset.locale input[name="postal-code"] {
     display: inline;
@@ -242,3 +243,4 @@ iframe {
   #fs-frm fieldset.locale select[name="state"] {
     margin-right: 3%;
   }
+  /* Old Styles for my Form (End Point)*/

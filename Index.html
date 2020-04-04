@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -7,13 +7,15 @@
 
   <link rel="stylesheet" href="./styles/bootstrap.css">
   <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="icon" href="./images/logo_no_Background.png">
+  <title>Jenkins Autopaint - Home</title>
 </head>
 
 <body class="index">
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous"
     src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0"></script>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -35,11 +37,11 @@
       </ul>
     </div>
   </nav>
-  <div class="container-fluid index">
+  <div class="container-fluid index" role="main">
     <div class="row">
-      <div class="facebook-div">
+      <div class="facebook-div" role="facebook feed">
         <div class="home-screen-facebook">
-          <p class="mb-0"><iframe title="Jenkin's Autopaint Facebook Feed"
+          <p class="mb-0"><iframe title="Jenkin's Autopaint Facebook Feed" role="feed"
             src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FJenkinsAutopaint&tabs=timeline&width=305&height=400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
             width="305" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
             allowTransparency="true" allow="encrypted-media">
@@ -47,7 +49,7 @@
         </p>
         </div>
       </div>
-      <div class="logo-div">
+      <div class="logo-div" role="logo">
         <div class="home-screen-text">
           <p class="m-0">
             <img src="./images/logo_no_Background.png" alt="Jenkins Autopaint Logo" class="home-logo">

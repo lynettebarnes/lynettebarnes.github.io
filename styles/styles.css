@@ -17,6 +17,10 @@ body.index {
      height:100vh;
 }
 
+.btn-send {
+    background-color: #1F8433;
+}
+
 @media only screen and (max-width: 500px) {
     .container-fluid.index {
         /* display: table; */
